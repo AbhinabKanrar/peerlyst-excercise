@@ -1,0 +1,285 @@
+{
+	"info": {
+		"name": "peerlyst-excersise",
+		"_postman_id": "0919cf82-2a1a-bac6-2c45-4f2b938aea47",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"5oFWHanGFfjDtZQQ9\",\n\t\"password\" : \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"@tester\",\n\t\"password\" : \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"@abhinab\",\n\t\"password\" : \"password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save follow by user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "p-userId",
+						"value": "Tp2eSKJngBDrwXoYf"
+					},
+					{
+						"key": "p-token",
+						"value": "dbc9fdea-a421-4331-a3aa-7f8ce2f13055"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"65MdeQwDKcyDW5h9w\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/follow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"follow"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save follow by tag",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "p-userId",
+						"value": "Tp2eSKJngBDrwXoYf"
+					},
+					{
+						"key": "p-token",
+						"value": "dbc9fdea-a421-4331-a3aa-7f8ce2f13055"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tag\" : \"csrf\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/follow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"follow"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get follow",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "p-userId",
+						"value": "Tp2eSKJngBDrwXoYf"
+					},
+					{
+						"key": "p-token",
+						"value": "dbc9fdea-a421-4331-a3aa-7f8ce2f13055"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"5oFWHanGFfjDtZQQ9\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/follow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"follow"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "p-userId",
+						"value": "Tp2eSKJngBDrwXoYf"
+					},
+					{
+						"key": "p-token",
+						"value": "dbc9fdea-a421-4331-a3aa-7f8ce2f13055"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\" : \"PUBLIC\",\n\t\"msg\" : \"my msg\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get post",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "p-token",
+						"value": "dbc9fdea-a421-4331-a3aa-7f8ce2f13055"
+					},
+					{
+						"key": "p-userId",
+						"value": "Tp2eSKJngBDrwXoYf"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\" : \"PUBLIC\",\n\t\"userId\" : \"uid1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/posts?page=0&size=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"equals": true
+						},
+						{
+							"key": "size",
+							"value": "10",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
