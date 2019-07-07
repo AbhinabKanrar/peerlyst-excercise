@@ -126,11 +126,26 @@ if (Meteor.isServer) {
                 size = 0
             }
 
-            let data = Post.find({$or: [{'userId': {"$in": followingUserIds}}, {'tags': {"$in": followingTags}}]}, {skip: page, limit: size}, {sort: {'ts': -1}}).fetch()
+            let posts = Post.find({$or: [{'userId': {"$in": followingUserIds}}, {'tags': {"$in": followingTags}}]}, {skip: page, limit: size}, {sort: {'ts': -1}}).fetch()
+
+            // publicPosts = posts.filter(post => post['type'] == 'PUBLIC')
+            // privatePosts = posts.filter(post => post['type'] == 'PRIVATE')
+
+            // var counter = 0
+            // var result = []
+
+            // for (i = 0; i < posts.length; i++) {
+            //     if(counter != 2) {
+            //         result.push(posts[i])
+            //         counter++
+            //     } else {
+            //         counter = 0
+            //     }
+            // }
 
             let response = {
                 "status": true,
-                "data": data
+                "data": posts
             }
 
             this.response.setHeader('Content-Type', 'application/json')
