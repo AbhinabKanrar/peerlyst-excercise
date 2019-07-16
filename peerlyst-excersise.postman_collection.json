@@ -18,7 +18,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"5oFWHanGFfjDtZQQ9\",\n\t\"password\" : \"password\"\n}"
+					"raw": "{\n\t\"id\" : \"FBKa28td7vxiWaiy8\",\n\t\"password\" : \"password\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/login",
@@ -47,7 +47,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"username\" : \"@tester\",\n\t\"password\" : \"password\"\n}"
+					"raw": "{\n\t\"username\" : \"@slave\",\n\t\"password\" : \"password\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/users",
@@ -99,7 +99,7 @@
 					},
 					{
 						"key": "p-userId",
-						"value": "Tp2eSKJngBDrwXoYf"
+						"value": "FBKa28td7vxiWaiy8"
 					},
 					{
 						"key": "p-token",
@@ -108,7 +108,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"65MdeQwDKcyDW5h9w\"\n}"
+					"raw": "{\n\t\"id\" : \"CmySyAnjEBzzuE3hj\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/follow",
@@ -136,7 +136,7 @@
 					},
 					{
 						"key": "p-userId",
-						"value": "Tp2eSKJngBDrwXoYf"
+						"value": "FBKa28td7vxiWaiy8"
 					},
 					{
 						"key": "p-token",
@@ -173,7 +173,7 @@
 					},
 					{
 						"key": "p-userId",
-						"value": "Tp2eSKJngBDrwXoYf"
+						"value": "FBKa28td7vxiWaiy8"
 					},
 					{
 						"key": "p-token",
@@ -210,7 +210,7 @@
 					},
 					{
 						"key": "p-userId",
-						"value": "Tp2eSKJngBDrwXoYf"
+						"value": "CmySyAnjEBzzuE3hj"
 					},
 					{
 						"key": "p-token",
@@ -219,7 +219,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"type\" : \"PUBLIC\",\n\t\"msg\" : \"my msg\"\n}"
+					"raw": "{\n\t\"type\" : \"PUBLIC\",\n\t\"msg\" : \"my msg1\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:3000/posts",
@@ -247,7 +247,7 @@
 					},
 					{
 						"key": "p-userId",
-						"value": "Tp2eSKJngBDrwXoYf"
+						"value": "CmySyAnjEBzzuE3hj"
 					}
 				],
 				"body": {
