@@ -19,7 +19,7 @@ if (Meteor.isServer) {
             } else {
                 let data = User.find({ _id: this.request.body.id, password: this.request.body.password }).fetch()
 
-                if (data) {
+                if (data && data.length == 1) {
                     token = uuid()
                     Auth.upsert({ userId: data[0]._id }, { $set: { token: token } })
 
